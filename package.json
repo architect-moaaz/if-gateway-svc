@@ -1,0 +1,38 @@
+{
+  "name": "api-gateway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gateway.js",
+  "scripts": {
+    "devStart": "nodemon gateway.js",
+    "start:prod": "export NODE_ENV=prod && nodemon gateway.js",
+    "start:prod-windows": "set NODE_ENV=prod && nodemon gateway.js",
+    "start:dev": "export NODE_ENV=dev && nodemon gateway.js",
+    "start:dev-windows": "set NODE_ENV=dev && nodemon gateway.js",
+    "start:uat": "export NODE_ENV=uat && nodemon gateway.js",
+    "start:uat-windows": "set NODE_ENV=uat && nodemon gateway.js",
+    "start:colo": "export NODE_ENV=colo && nodemon gateway.js",
+    "start:colo-windows": "set NODE_ENV=colo && nodemon gateway.js",
+    "start": "node gateway.js",
+    "test": "gateway.js test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.2.2",
+    "body-parser": "^1.20.1",
+    "connect-timeout": "^1.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "express-json": "^1.0.0",
+    "fast-gateway": "^3.4.5",
+    "helmet": "^6.0.1",
+    "hot-formula-parser": "^4.0.0",
+    "method-override": "^2.3.10",
+    "mongoose": "^7.3.0",
+    "nodemon": "^2.0.20",
+	"http-proxy-middleware" : ""
+  }
+}
